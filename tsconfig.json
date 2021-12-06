@@ -20,5 +20,5 @@
     "baseUrl": "./src",
     "downlevelIteration": true
   },
-  "include": ["src", "./src/setupTests.ts"]
+  "include": ["src"]
 }

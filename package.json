@@ -1,0 +1,107 @@
+{
+  "name": "my-app",
+  "version": "0.1.1",
+  "private": true,
+  "dependencies": {
+    "@mui/icons-material": "^5.0.5",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@types/enzyme": "^3.10.10",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.6",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@types/react-redux": "^7.1.20",
+    "@types/react-router-dom": "^5.3.2",
+    "axios": "^0.24.0",
+    "enzyme": "^3.11.0",
+    "jest": "^27.3.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.19.3",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.0.1",
+    "react-scripts": "4.0.3",
+    "redux-thunk": "^2.4.0",
+    "styled-components": "^5.3.3",
+    "typescript": "^4.4.4",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "restyle": "npx prettier --write 'src/**/*.{ts,tsx,json,md}'"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "prettier"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --quiet --fix"
+    ],
+    "*.{json,md,html}": [
+      "prettier --write"
+    ],
+    "*.js": "eslint --cache --fix"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-links": "^6.3.12",
+    "@storybook/node-logger": "^6.3.12",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.3.12",
+    "@types/styled-components": "^5.1.15",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
+    "babel-eslint": "^10.1.0",
+    "enzyme-to-json": "^3.6.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-flowtype": "^5.10.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jest": "^24.7.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-testing-library": "^3.10.2",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.6",
+    "prettier": "2.2.1",
+    "redux-devtools-extension": "^2.13.9",
+    "ts-jest": "^27.0.7"
+  }
+}
